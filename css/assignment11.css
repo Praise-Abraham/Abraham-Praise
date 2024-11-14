@@ -1,0 +1,46 @@
+div{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+.wrapper{
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulb{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: gray;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    margin: -50px auto 0;
+}
+
+body.on .bulb {
+    background: white;
+    box-shadow: 0 0 30px #fff,
+    0 0 60px, #fff,
+    0 0 90px, #fff,
+    0 0 120px #fff;
+}
+
+.bulb::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 22.5px;
+    width: 35px;
+    height: 80px;
+    background: #666;
+    border-top: 30px solid #000;
+    border-radius: 10px;
+}

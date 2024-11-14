@@ -1,0 +1,22 @@
+.greeting{
+    position: relative;
+    border: 1px solid black;
+}
+
+.cotton {
+    visibility: hidden;
+    opacity: 0;
+    color: aqua;
+
+}
+
+button:hover + .cotton{
+    visibility: visible;
+    opacity: 1;
+}
+
+button{
+    padding: 10px;
+    font-weight: bold;
+    color: blue;
+}
